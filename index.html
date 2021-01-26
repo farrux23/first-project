@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript To do list 2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h1 class="mx-auto my-3">Create <span class="font-weight-bold text-success">"To Do"</span> lists with us <span
+                class="font-weight-bold text-success">&check;</span></h1>
+
+        <div class="col-8 offset-2 my-5 input-group">
+            <input type="text" id="input" placeholder="Type tasks..."
+                   class="form-control bg-light shadow-none border-0">
+            <button type="button" class="btn btn-success input-group-append" onclick="getValueOfInput()">Add</button>
+        </div>
+
+        <div class="col-10 p-0 mx-auto progress" style="height: 40px">
+            <div id="progress" class="progress-bar bg-success font-weight-bold" style="width: 0; height: 40px">   </div>
+        </div>
+
+        <div class="col-10 p-0 offset-1 my-5 d-flex justify-content-between align-items-center">
+            <h3 class="font-weight-bold text-danger">Must DO</h3>
+            <div><span class="h-100 text-danger font-weight-bold">|</span>
+                <span class="h-100 text-success font-weight-bold">|</span></div>
+            <h3 class="font-weight-bold text-success">DONE</h3>
+        </div>
+
+        <div class="error col-8 offset-2 mx-auto font-weight-bold text-dark text-center">
+            <h3 id="error"></h3>
+        </div>
+
+        <div class="col-10 offset-1 p-0 justify-content-between d-flex">
+
+
+
+            <div id="task-content-must-do" class="col-6 p-0 d-flex flex-column text-left">
+
+            </div>
+            <div id="task-content-done" class="col-6 p-0 d-flex flex-column text-right">
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--DOWN-->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<!--MY SCRIPTS-->
+
+
+</body>
+</html>
